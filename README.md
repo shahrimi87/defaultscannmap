@@ -1,0 +1,2 @@
+# defaultscannmap
+defaultscannmap.txt
