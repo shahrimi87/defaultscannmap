@@ -1,0 +1,13 @@
+### 🔍 Nmap -sC Script Scan Summary (scanme.nmap.org)
+- IP Target: 45.33.32.156
+- Host Status: Online
+- Open Ports:
+  - 22/tcp (SSH): Hostkeys detected (DSA, RSA, ECDSA, ED25519)
+  - 80/tcp (HTTP): Title detected: "Go ahead and ScanMe!"
+  - 9929/tcp (Nping Echo): Open - uncommon service, possibly test/debug
+  - 31337/tcp (Elite): Suspicious port often used in malware/backdoors
+
+### ⚠️ Potential Risks:
+- Port 22: Weak encryption possible if old key types are used (DSA)
+- Port 31337: Unusual port associated with unauthorized remote access
+- Lack of version info means further version detection may be needed
