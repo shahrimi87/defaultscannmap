@@ -1,42 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Nmap Scan Project</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nmap Scan Report</title>
   <style>
     body {
-      background-color: #000;
+      background-color: #0d0d0d;
+      font-family: 'Courier New', monospace;
+      color: #00ffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #112e42;
+      padding: 2rem 3rem;
+      text-align: center;
+      box-shadow: 0 0 15px #0ff;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
       color: #0ff;
-      font-family: monospace;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 4rem auto;
+      background-color: #1a1a1a;
       padding: 2rem;
-    }
-    h1 {
-      color: #0ff;
-      text-shadow: 0 0 5px #0ff;
-    }
-    pre {
-      background: #111;
-      padding: 1rem;
       border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    }
+
+    .container h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      color: #0ff;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background-color: transparent;
+      color: #0ff;
+      border: 1px solid #0ff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0ff;
+      color: #000;
       box-shadow: 0 0 10px #0ff;
     }
+
+    footer {
+      margin-top: 5rem;
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+      font-size: 1.2rem;
+    }
+
   </style>
 </head>
 <body>
-  <h1>Nmap Scan Report</h1>
-  <p>This is a sample result from a default Nmap scan on scanme.nmap.org:</p>
-  <pre>
-Starting Nmap 7.93 ( https://nmap.org ) at 2025-06-16
-Nmap scan report for scanme.nmap.org (45.33.32.156)
-Host is up (0.29s latency).
-Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
 
-PORT    STATE SERVICE
-22/tcp  open  ssh
-80/tcp  open  http
+  <header>
+    <h1>Nmap Scan Report</h1>
+  </header>
 
-Nmap done: 1 IP address (1 host up) scanned in 2.88 seconds
-  </pre>
+  <div class="container">
+    <h2>Project Summary</h2>
+    <p>This project demonstrates the use of <strong>Nmap</strong> for performing a <strong>default scan</strong> to identify open ports, services, and host availability.</p>
+    <p>The scan results are useful for basic reconnaissance and security auditing, providing insights into potentially vulnerable services running on a target system.</p>
+
+    <a href="report/scan-result.txt" class="btn" target="_blank">📄 View Scan Report</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Shahrimi Othman. All rights reserved.
+  </footer>
+
 </body>
 </html>
